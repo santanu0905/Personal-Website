@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .Personal{
+            font-size: 20px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 50px;
+            line-height: 1.1;
+            min-height: 100vh;
+            background-image:url(background1.jpg);
+        }
+        button{
+            margin-left: 100px;
+            margin-top: 20px;
+            line-height: 2;
+            width: 70px;
+        }
+        h1{
+            margin-left: 240px;
+        }
+        input{
+            background: transparent;
+            border: 2px solid black;
+        }
+        legend{
+            margin-left: 40%;
+            font-size:xx-large;
+        }
+        .main{
+            backdrop-filter: blur(4px);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border: 2px solid var(--primary-color);
+            padding: 40px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <form>
+        <fieldset>
+            <legend>FORM</legend>
+            <h2>Personal Details:-</h2>
+            <ol class="Personal">
+                <label>
+                    <li>
+                        Salutation:
+                        <select style="background: transparent;border: 2px solid black;">
+                            <option>--None--</option>
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Mrs.</option>
+                            <option>Dr.</option>
+                            <option>Prof.</option>
+                        </select>
+                    </li>
+                </label>
+                <li>
+                    <lable>
+                        <p class="Personal">First name:<input type="text"></p>
+                    </lable>
+                </li>
+                <li>
+                    <lable>
+                        <p class="Personal">Middle Name:<input type="text"></p>
+                    </lable>
+                </li>
+                <li>
+                    <lable>
+                        <p class="Personal">Last Name:<input type="text"></p>
+                    </lable>
+                </li>
+                <li>
+                    <label>
+                        <p class="Personal">Father's Name:<input type="text"></p>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <p class="Personal">Date of Birth:<input type="date"></p>
+                    </label>
+                </li>
+                <label>
+                    <li>Gender:
+                                <ul style="list-style-type: none;">
+                                    <li><input type="radio" name="gender" value="Male" >Male</li>
+                                    <li><input type="radio" name="gender" value="Female">Female</li>
+                                </ul>
+                    </li>
+                </label>
+                <label>
+                    <li>Nationality:
+                        <ul style="list-style-type: none;">
+                                <li><input type="radio" name="nation" >India</li>
+                                <li><input type="radio" name="nation">America</li>
+                                <li><input type="radio" name="nation">England</li>
+                                <li><input type="radio" name="nation">Others</li>
+                        </ul>
+                    </li>
+                </label>
+            </ol>    
+                <hr>
+                <h2 class="Personal">Contact Information:-</h2>
+            <ol class="Personal" start="9">
+                <li>
+                    <p>
+                        Email:<input type="email" required>
+                    </p>
+                </li>
+                <li>
+                    <P class="Personal">
+                        Contact Number:<input type="number" required>
+                    </P>
+                </li>
+                <li>
+                    <p class="Personal">
+                        Alternative Contact Number:<input type="number">
+                    </p>
+                </li>
+                <li>
+                    Address:-<br>
+                    <textarea cols="50" rows="5" style="background: transparent; border: 2px solid black;"></textarea>
+                </li>
+            </0l>
+            <button type="submit" class="button" style="background: transparent;">Submit</button>
+            <button type="reset" class="button" style="background: transparent;">Reset</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
